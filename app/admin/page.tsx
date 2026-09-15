@@ -62,7 +62,7 @@ export default function AdminDashboardPage() {
     caseThickness: "11.5mm",
     strapMaterial: "Black Alligator Leather",
     dialColor: "Skeletonized Anthracite",
-    description: "An exceptional new creation from Atelier Aurelion.",
+    description: "An exceptional new creation from Atelier Aura.",
     images: ["/assets/intro/media_1788505911678.jpg"],
     modelUrl: "/models/watches/custom-model.glb",
   });
@@ -425,7 +425,7 @@ export default function AdminDashboardPage() {
                     required
                     value={newWatch.name}
                     onChange={(e) => setNewWatch({ ...newWatch, name: e.target.value })}
-                    placeholder="Aurelion Perpetual Titanium"
+                    placeholder="Aura Perpetual Titanium"
                     className="w-full bg-obsidian-900 border border-white/15 rounded px-3 py-2 text-xs text-white outline-none focus:border-gold"
                   />
                 </div>

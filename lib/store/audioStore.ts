@@ -55,7 +55,7 @@ export const useAudioStore = create<AudioStore>()(
       }
     }),
     {
-      name: "aurelion_audio_settings"
+      name: "aura_audio_settings"
     }
   )
 );

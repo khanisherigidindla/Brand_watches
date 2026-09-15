@@ -21,7 +21,7 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const key = "aurelion_enquiries";
+      const key = "aura_enquiries";
       const raw = localStorage.getItem(key);
       const list = raw ? JSON.parse(raw) : [];
       list.unshift({ ...form, id: `enq_${Date.now()}`, createdAt: new Date().toISOString() });
@@ -57,7 +57,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <p className="text-silver-dark font-mono">Email</p>
-                <p className="text-white font-serif">concierge@aurelion.luxury</p>
+                <p className="text-white font-serif">concierge@aura.luxury</p>
               </div>
             </div>
             <div className="flex items-center gap-4 text-xs">

@@ -3,8 +3,8 @@ import Image from "next/image";
 import { ArrowRight, Award, BadgeCheck, Building2, Gem, HeartHandshake, ShieldCheck, Truck } from "lucide-react";
 
 export const metadata = {
-  title: "About Aurelion | Fine Watches at Honest Prices",
-  description: "Aurelion is India's trusted destination for authentic luxury and budget-friendly watches with real market prices.",
+  title: "About Aura | Brand Watches at Honest Prices",
+  description: "Aura is India's trusted destination for authentic luxury and budget-friendly watches with real market prices.",
 };
 
 const values = [
@@ -26,8 +26,8 @@ export default function AboutPage() {
       <section className="border-b border-slate-200 bg-gradient-to-b from-slate-50 to-white">
         <div className="max-w-7xl mx-auto px-5 md:px-8 py-14 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div>
-            <p className="text-[11px] font-bold tracking-[0.24em] uppercase text-[#b9975b]">About Aurelion</p>
-            <h1 className="mt-3 text-4xl md:text-5xl font-extrabold tracking-tight">India&apos;s honest home for fine watches.</h1>
+            <p className="text-[11px] font-bold tracking-[0.24em] uppercase text-[#b9975b]">About Aura</p>
+            <h1 className="mt-3 text-4xl md:text-5xl font-extrabold tracking-tight">India&apos;s honest home for brand watches.</h1>
             <p className="mt-4 text-slate-500 leading-relaxed max-w-xl">From a Rs 3,499 Sonata to a Rs 2.85-crore Patek Philippe Nautilus — every watch shows its exact photograph, full name and real market price.</p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Link href="/watches" className="inline-flex items-center gap-2 bg-[#0e3a5d] text-white text-sm font-bold rounded-lg px-6 py-3">Browse all watches <ArrowRight className="w-4 h-4" /></Link>
@@ -56,7 +56,7 @@ export default function AboutPage() {
         <p className="text-[11px] font-bold tracking-[0.24em] uppercase text-[#b9975b]">Our story</p>
         <h2 className="mt-2 text-2xl md:text-3xl font-extrabold tracking-tight">Built because watch buying felt broken.</h2>
         <div className="mt-5 grid grid-cols-1 lg:grid-cols-2 gap-6 text-[15px] text-slate-600 leading-relaxed">
-          <p>Aurelion started in Mumbai with one frustration: watch prices in India were a maze of inflated MRPs and stock photos that never matched the real piece. So we built the store we wished existed — each listing carries the exact photograph, full reference name, and the real street price.</p>
+          <p>Aura started in Mumbai with one frustration: watch prices in India were a maze of inflated MRPs and stock photos that never matched the real piece. So we built the store we wished existed — each listing carries the exact photograph, full reference name, and the real street price.</p>
           <p>Today we curate 38 luxury references — Rolex, Patek Philippe, Omega, Cartier and more — alongside 34 budget-friendly picks from Seiko, Citizen, Casio, Titan and Timex, each illustrated with real studio artwork from our own catalogue. Every order is checked, insured and backed for five years.</p>
         </div>
       </section>
@@ -101,8 +101,8 @@ export default function AboutPage() {
           {[
             { src: "/limited-editions/images4.jpeg", alt: "Patek Philippe Nautilus" },
             { src: "/limited-editions/images5.jpeg", alt: "Audemars Piguet Royal Oak" },
-            { src: "/assets/intro/frame-001.jpg", alt: "Aurelion studio frame" },
-            { src: "/assets/intro/media_1788505911678.jpg", alt: "Aurelion showcase" },
+            { src: "/assets/intro/frame-001.jpg", alt: "Aura studio frame" },
+            { src: "/assets/intro/media_1788505911678.jpg", alt: "Aura showcase" },
           ].map((g) => (
             <div key={g.src} className="relative aspect-square bg-slate-100 rounded-2xl overflow-hidden border border-slate-200">
               <Image src={g.src} alt={g.alt} fill className="object-cover" />

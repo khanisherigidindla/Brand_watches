@@ -42,7 +42,7 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({ onComplete }) =>
     }, 5400);
 
     const t4 = setTimeout(() => {
-      setCurrentScene(5); // Scene 05: Brand reveal - AURELION
+      setCurrentScene(5); // Scene 05: Brand reveal - AURA
       playShimmer();
     }, 7600);
 
@@ -92,7 +92,7 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({ onComplete }) =>
           >
             <Image
               src={frameSrc}
-              alt="Aurelion Horology Intro Unveil"
+              alt="Aura Horology Intro Unveil"
               fill
               priority
               className="object-contain md:object-cover filter brightness-[0.7] contrast-[1.15]"
@@ -176,7 +176,7 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({ onComplete }) =>
               Scene 04 · Haute Horlogerie Revelation
             </span>
             <h2 className="text-2xl md:text-4xl font-serif text-white tracking-wide">
-              Aurelion Squelette Saphir
+              Aura Squelette Saphir
             </h2>
             <p className="text-xs md:text-sm font-mono text-gold-champagne tracking-widest uppercase">
               Numbered Limited Series · 50 Pieces Worldwide
@@ -191,7 +191,7 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({ onComplete }) =>
               <Sparkles className="w-3 h-3" /> Manufacture Horlogère Suisse
             </div>
             <h1 className="text-5xl md:text-8xl font-serif font-bold text-white tracking-[0.22em] text-center">
-              AURELION
+              AURA
             </h1>
             <p className="text-xs md:text-sm font-sans uppercase tracking-[0.35em] text-gold font-medium">
               TIME, ENGINEERED FOR ETERNITY.
@@ -215,7 +215,7 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({ onComplete }) =>
         </div>
         <div className="flex justify-between items-center text-[9px] font-mono text-white/40 mt-2">
           <span>0{currentScene} / 06</span>
-          <span className="uppercase tracking-widest text-gold/80">Atelier Aurelion</span>
+          <span className="uppercase tracking-widest text-gold/80">Atelier Aura</span>
         </div>
       </div>
     </div>

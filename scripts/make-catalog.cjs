@@ -177,7 +177,7 @@ for (let p = 0; p < PANELS.length; p++) {
           : "Hand-Selected Alligator Leather Strap";
     items.push(`    {
       id: "aur-${slug}",
-      name: "Aurelion ${series}",
+      name: "Aura ${series}",
       slug: "${slug}",
       tagline: "${dial} ${P.metal} · ${comp}",
       collection: ${JSON.stringify(compToCollection(comp))},
@@ -198,7 +198,7 @@ for (let p = 0; p < PANELS.length; p++) {
       caseThickness: ${JSON.stringify(["10.5mm", "11.8mm", "9.2mm", "12.1mm"][k % 4])},
       strapMaterial: "${strap}",
       dialColor: "${dial}",
-      description: "The Aurelion ${series} pairs a ${dial} ${P.metal.toLowerCase()} timepiece with ${comp} precision — finished by hand in our Geneva atelier.",
+      description: "The Aura ${series} pairs a ${dial} ${P.metal.toLowerCase()} timepiece with ${comp} precision — finished by hand in our Geneva atelier.",
       craftsmanshipNotes: ${JSON.stringify(["Hand-finished in Geneva", "Sapphire anti-reflective crystal", "Chronometric tested over 200 hours"])},
       features: ${JSON.stringify([comp, `${P.metal} case`, `${dial} dial`, "Secure online payment"])},
       images: ["/assets/watches/w-panel-${p + 1}-${k + 1}.svg"],

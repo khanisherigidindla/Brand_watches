@@ -35,7 +35,7 @@ export default function WatchDetailPage() {
     const p = toProduct();
     if (!isAuthenticated) {
       if (typeof window !== "undefined") {
-        localStorage.setItem("aurelion_pending_cart_item", JSON.stringify({ product: p, quantity: qty }));
+        localStorage.setItem("aura_pending_cart_item", JSON.stringify({ product: p, quantity: qty }));
       }
       router.push("/login?redirect=cart");
       return;

@@ -57,7 +57,7 @@ export const WatchCard: React.FC<{ watch: RealWatch }> = ({ watch }) => {
     if (!isAuthenticated) {
       if (typeof window !== "undefined") {
         localStorage.setItem(
-          "aurelion_pending_cart_item",
+          "aura_pending_cart_item",
           JSON.stringify({ product, quantity: 1 }),
         );
       }

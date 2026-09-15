@@ -8,7 +8,7 @@ const shopLinks = [
 ];
 
 const companyLinks = [
-  { href: "/about", label: "About Aurelion" },
+  { href: "/about", label: "About Aura" },
   { href: "/budget-friendly", label: "Budget-Friendly" },
   { href: "/contact", label: "Contact" },
   { href: "/dashboard", label: "Client Account" },
@@ -20,9 +20,9 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-5 md:px-8 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
         <div className="space-y-4">
           <div className="flex flex-col leading-none">
-            <span className="font-serif text-xl tracking-[0.22em] font-bold">AURELION</span>
+            <span className="font-serif text-xl tracking-[0.22em] font-bold">AURA</span>
             <span className="text-[10px] tracking-[0.3em] text-brand-gold uppercase mt-1">
-              Fine Watches
+              Brand Watches
             </span>
           </div>
           <p className="text-sm text-white/70 max-w-xs leading-relaxed">
@@ -68,7 +68,7 @@ export const Footer = () => {
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-5 md:px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-xs text-white/60">
-            © {new Date().getFullYear()} AURELION Fine Watches. All rights reserved.
+            © {new Date().getFullYear()} AURA Brand Watches. All rights reserved.
           </p>
           <p className="text-[11px] tracking-[0.2em] uppercase text-white/50">
             Mumbai · Delhi · Dubai

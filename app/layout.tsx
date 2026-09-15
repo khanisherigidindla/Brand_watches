@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const display = Playfair_Display({ subsets: ["latin"], variable: "--font-display" });
 
 export const metadata: Metadata = {
-  title: "AURELION | Fine Watches at Real Market Prices",
+  title: "AURA | Brand Watches at Real Market Prices",
   description:
     "Shop the world's finest watches — Rolex, Patek Philippe, Omega, Cartier and more — with real market prices in INR.",
 };

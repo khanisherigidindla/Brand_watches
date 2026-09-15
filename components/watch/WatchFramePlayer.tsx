@@ -61,7 +61,7 @@ export const WatchFramePlayer: React.FC<{ large?: boolean }> = ({ large }) => {
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={WATCH_FRAME_FILES[frame - 1]}
-            alt={`Aurelion showcase frame ${frame}`}
+            alt={`Aura showcase frame ${frame}`}
             className="watch-film-image h-[82%] w-auto drop-shadow-[0_30px_60px_rgba(15,35,60,0.35)]"
             style={{
               transform: `rotateX(${8 + tilt.y}deg) rotateY(${-8 + tilt.x}deg) translateZ(0)`,

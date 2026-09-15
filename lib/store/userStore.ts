@@ -68,7 +68,7 @@ export const useUserStore = create<UserStore>()(
         const profile = getActiveUserProfile();
         const patronProfile: UserProfile = {
           ...profile,
-          email: normalizedEmail || "collector@aurelion.luxury",
+          email: normalizedEmail || "collector@aura.luxury",
           firstName: normalizedEmail ? normalizedEmail.split("@")[0] : "Patron",
         };
         saveActiveUserProfile(patronProfile);
@@ -82,13 +82,13 @@ export const useUserStore = create<UserStore>()(
         useCartStore.getState().loadUserCart(patronProfile.email).then(() => {
           // If user had a pending cart item before logging in, append it now
           if (typeof window !== "undefined") {
-            const rawPending = localStorage.getItem("aurelion_pending_cart_item");
+            const rawPending = localStorage.getItem("aura_pending_cart_item");
             if (rawPending) {
               try {
                 const pending = JSON.parse(rawPending);
                 if (pending?.product) {
                   useCartStore.getState().addItem(pending.product, pending.quantity || 1, pending.engraving);
-                  localStorage.removeItem("aurelion_pending_cart_item");
+                  localStorage.removeItem("aura_pending_cart_item");
                 }
               } catch (e) {
                 console.error("Error parsing pending cart item", e);
@@ -120,7 +120,7 @@ export const useUserStore = create<UserStore>()(
       },
     }),
     {
-      name: "aurelion_auth_state",
+      name: "aura_auth_state",
     }
   )
 );

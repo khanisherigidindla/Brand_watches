@@ -1,4 +1,4 @@
-/* Generates distinct premium vector SVG watch illustrations for the Atelier Aurelion
+/* Generates distinct premium vector SVG watch illustrations for the Atelier Aura
    catalogue. One image per product + collection banners. No external deps. */
 const fs = require("fs");
 const path = require("path");

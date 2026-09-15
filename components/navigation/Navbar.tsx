@@ -51,10 +51,10 @@ export const Navbar = () => {
             </button>
             <Link href="/dashboard" className="flex flex-col leading-none">
               <span className="font-serif text-xl md:text-2xl tracking-[0.22em] font-bold text-ink-950">
-                AURELION
+                AURA
               </span>
               <span className="text-[10px] tracking-[0.3em] text-brand-gold uppercase mt-1">
-                Fine Watches
+                Brand Watches
               </span>
             </Link>
           </div>

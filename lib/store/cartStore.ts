@@ -116,7 +116,7 @@ export const useCartStore = create<CartStore>()(
       }
     }),
     {
-      name: "aurelion_luxury_cart"
+      name: "aura_luxury_cart"
     }
   )
 );

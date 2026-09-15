@@ -1,9 +1,9 @@
 import { WatchProduct, Order, UserProfile } from "../types/watch";
 import { WATCH_PRODUCTS } from "../data/seedProducts";
 
-const PRODUCTS_KEY = "aurelion_products_db";
-const ORDERS_KEY = "aurelion_orders_db";
-const USER_KEY = "aurelion_active_user";
+const PRODUCTS_KEY = "aura_products_db";
+const ORDERS_KEY = "aura_orders_db";
+const USER_KEY = "aura_active_user";
 
 export function getLocalProducts(): WatchProduct[] {
   if (typeof window === "undefined") return WATCH_PRODUCTS;
@@ -71,7 +71,7 @@ export function getActiveUserProfile(): UserProfile {
   if (typeof window === "undefined") {
     return {
       id: "usr_vip_001",
-      email: "collector@aurelion.luxury",
+      email: "collector@aura.luxury",
       firstName: "Julian",
       lastName: "Vanderbilt",
       phone: "+91 98201 54321",
@@ -95,7 +95,7 @@ export function getActiveUserProfile(): UserProfile {
     if (!raw) {
       const defaultUser: UserProfile = {
         id: "usr_vip_001",
-        email: "collector@aurelion.luxury",
+        email: "collector@aura.luxury",
         firstName: "Julian",
         lastName: "Vanderbilt",
         phone: "+91 98201 54321",
@@ -119,7 +119,7 @@ export function getActiveUserProfile(): UserProfile {
   } catch {
     return {
       id: "usr_vip_001",
-      email: "collector@aurelion.luxury",
+      email: "collector@aura.luxury",
       firstName: "Julian",
       lastName: "Vanderbilt"
     };

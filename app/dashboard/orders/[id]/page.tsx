@@ -105,7 +105,7 @@ export default function OrderTrackingPage() {
           <div>
             <h3 className="text-lg font-serif text-white">Acquisition Progress Timeline</h3>
             <p className="text-xs text-silver-dark mt-0.5">
-              Live updates from the Atelier Aurelion Geneva workshop and transit logistics.
+              Live updates from the Atelier Aura Geneva workshop and transit logistics.
             </p>
           </div>
 

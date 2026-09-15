@@ -83,7 +83,7 @@ function PaymentFailureContent() {
         {/* Help */}
         <div className="text-center text-xs text-silver-dark">
           Need assistance? Contact our concierge at{" "}
-          <span className="text-gold">concierge@aurelion.com</span> or{" "}
+          <span className="text-gold">concierge@aura.com</span> or{" "}
           <span className="text-gold">+91 22 1234 5678</span>
         </div>
       </div>

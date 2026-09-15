@@ -74,7 +74,7 @@ export default function DashboardPage() {
               transition={{ duration: 0.7, ease: "easeOut", delay: 0.05 }}
               className="mt-2 text-[clamp(2.25rem,10vw,4.5rem)] leading-[1.02] font-extrabold tracking-tight text-slate-900"
             >
-              Fine watches.
+              Brand watches.
               <br />
               Honest prices.
             </motion.h1>

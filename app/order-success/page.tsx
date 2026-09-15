@@ -32,7 +32,7 @@ function OrderSuccessContent() {
             PAYMENT CONFIRMED
           </h1>
           <p className="text-xs md:text-sm text-silver-dark max-w-md mx-auto leading-relaxed">
-            Your timepiece has been reserved and registered into the Atelier Aurelion Geneva Ledger. Your provenance certificate is being prepared.
+            Your timepiece has been reserved and registered into the Atelier Aura Geneva Ledger. Your provenance certificate is being prepared.
           </p>
         </div>
 

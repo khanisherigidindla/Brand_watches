@@ -24,7 +24,7 @@ export const ProductCard: React.FC<{ product: WatchProduct }> = ({ product }) =>
     e.stopPropagation();
     if (!isAuthenticated) {
       if (typeof window !== "undefined") {
-        localStorage.setItem("aurelion_pending_cart_item", JSON.stringify({ product, quantity: 1 }));
+        localStorage.setItem("aura_pending_cart_item", JSON.stringify({ product, quantity: 1 }));
       }
       router.push("/login?redirect=cart");
       return;
@@ -96,7 +96,7 @@ export const ProductCard: React.FC<{ product: WatchProduct }> = ({ product }) =>
       <div className="flex flex-col space-y-1">
         <div className="flex justify-between items-start gap-2">
           <div>
-            <h3 className="text-[10px] font-mono text-silver-dark uppercase tracking-widest">Aurelion</h3>
+            <h3 className="text-[10px] font-mono text-silver-dark uppercase tracking-widest">Aura</h3>
             <h4 className="text-base font-serif text-white line-clamp-1 mt-1 group-hover:text-gold transition-colors">
               {product.name}
             </h4>

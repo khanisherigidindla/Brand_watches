@@ -111,7 +111,7 @@ export const AuthDropdown: React.FC = () => {
             <div className="divide-y divide-slate-100">
               <div className="p-3 bg-slate-900 text-white">
                 <span className="text-[10px] font-mono uppercase tracking-widest text-[#b9975b] block">
-                  Atelier Aurelion Access
+                  Atelier Aura Access
                 </span>
                 <p className="text-xs font-serif text-slate-200 mt-0.5">
                   Haute Horlogerie Private Client Portal

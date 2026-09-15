@@ -136,7 +136,7 @@ export default function CheckoutPage() {
     // Stash checkout details so the demo bank page can attach them to the order
     if (typeof window !== "undefined") {
       window.sessionStorage.setItem(
-        "aurelion_checkout_customer",
+        "aura_checkout_customer",
         JSON.stringify({
           customerName: `${formData.firstName} ${formData.lastName}`.trim() || "Guest Customer",
           email: formData.email || "",
@@ -234,13 +234,13 @@ export default function CheckoutPage() {
 
       // 3. For other methods, open Razorpay checkout popup
       const isTestMode = orderData.mode === "sandbox_simulator" || !orderData.id.startsWith("order_");
-      const razorpayKey = process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID || "rzp_test_luxury_aurelion";
+      const razorpayKey = process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID || "rzp_test_luxury_aura";
 
       const options = {
         key: razorpayKey,
         amount: orderData.amount,
         currency: orderData.currency || "INR",
-        name: "AURELION",
+        name: "AURA",
         description: "Luxury Timepiece Acquisition",
         order_id: orderData.id,
         prefill: {

@@ -36,7 +36,7 @@ export const useWishlistStore = create<WishlistStore>()(
       setNotificationCount: (count: number) => set({ notificationCount: count }),
     }),
     {
-      name: "aurelion_luxury_wishlist",
+      name: "aura_luxury_wishlist",
     }
   )
 );
@@ -127,7 +127,7 @@ export const useNotificationStore = create<NotificationStore>()(
       clearAll: () => set({ notifications: [], unreadCount: 0 }),
     }),
     {
-      name: "aurelion_luxury_notifications",
+      name: "aura_luxury_notifications",
     }
   )
 );

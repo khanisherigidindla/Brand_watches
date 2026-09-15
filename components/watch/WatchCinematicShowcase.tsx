@@ -58,7 +58,7 @@ export const WatchCinematicShowcase: React.FC = () => {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={WATCH_FRAME_FILES[frame - 1]}
-                alt="Aurelion watch showcase"
+                alt="Aura watch showcase"
                 className="watch-film-image h-full w-auto"
                 draggable={false}
                 onError={(e) => {

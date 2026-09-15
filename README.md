@@ -1,4 +1,4 @@
-# Aurelion Fine Watches
+# Aura Brand Watches
 
 Luxury watch e-commerce built with Next.js 14, TypeScript, Tailwind CSS, Zustand, Framer Motion, GSAP, Lenis and Three.js (R3F).
 

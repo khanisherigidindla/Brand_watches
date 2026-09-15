@@ -22,7 +22,7 @@ export default function PaymentTestPage() {
   const [paymentMethod, setPaymentMethod] = useState<"card" | "upi" | "netbanking" | "wallet">("card");
   const [customerInfo, setCustomerInfo] = useState({
     name: "Test User",
-    email: "test@aurelion.com",
+    email: "test@aura.com",
     phone: "9876543210",
   });
   const [otpValue, setOtpValue] = useState("");
@@ -65,13 +65,13 @@ export default function PaymentTestPage() {
 
       // Step 3: For other methods, open Razorpay checkout
       const isTestMode = data.mode === "sandbox_simulator" || data.id.includes("aur_");
-      const razorpayKey = process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID || "rzp_test_luxury_aurelion";
+      const razorpayKey = process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID || "rzp_test_luxury_aura";
 
       const options = {
         key: razorpayKey,
         amount: data.amount,
         currency: data.currency || "INR",
-        name: "AURELION",
+        name: "AURA",
         description: `Test Payment - ${testAmounts.find((a) => a.value === selectedAmount)?.desc || "Watch"}`,
         order_id: data.id,
         prefill: { name: customerInfo.name, email: customerInfo.email, contact: customerInfo.phone },

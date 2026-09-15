@@ -1,4 +1,4 @@
-# AURELION Brand Watches - YouTube Video Script
+# AURA Brand Watches - YouTube Video Script
 
 ## Recording note
 
@@ -19,11 +19,11 @@ Suggested video length: 8 to 12 minutes.
 
 ## Opening
 
-[Camera on or voice-over. Show the Aurelion landing experience.]
+[Camera on or voice-over. Show the Aura landing experience.]
 
 "Hey everyone, welcome back to the channel. If you are new here, please subscribe because I share more practical development projects, UI experiments, and deployment walkthroughs here.
 
-Today I am going to show you a project I built called Aurelion Brand Watches. It is a premium watch e-commerce website with a cinematic 3D-style experience, real product imagery, product browsing, authentication, a shopping cart, checkout, and a responsive interface that works across desktop, tablet, and mobile screens.
+Today I am going to show you a project I built called Aura Brand Watches. It is a premium watch e-commerce website with a cinematic 3D-style experience, real product imagery, product browsing, authentication, a shopping cart, checkout, and a responsive interface that works across desktop, tablet, and mobile screens.
 
 The goal was to make the experience feel more like visiting a luxury watch showroom than using a basic product grid. So let me walk you through what I built and how the main user journey works."
 
@@ -97,7 +97,7 @@ This gives the project the basic structure of a real e-commerce platform: produc
 
 [Return to the main dashboard or show the deployed URL.]
 
-"That is the Aurelion Brand Watches project. I built it to combine a premium visual experience with the practical pieces needed for an e-commerce website: a product catalog, responsive UI, authentication, cart and wishlist state, checkout, and a test payment flow.
+"That is the Aura Brand Watches project. I built it to combine a premium visual experience with the practical pieces needed for an e-commerce website: a product catalog, responsive UI, authentication, cart and wishlist state, checkout, and a test payment flow.
 
 The project is deployed online, so you can open the link in the description and explore the pages yourself. Please remember that the payment flow is a demonstration and uses test mode only.
 
@@ -107,7 +107,7 @@ Thank you for watching until the end. I will see you in the next video. Bye."
 
 ## Optional short intro
 
-"Hey everyone, welcome back to the channel. Today I am showing you Aurelion Brand Watches, a responsive Next.js and React e-commerce experience with cinematic watch visuals, product browsing, authentication, cart and wishlist features, and a test-mode checkout flow. Let us open the deployed website and see how it works."
+"Hey everyone, welcome back to the channel. Today I am showing you Aura Brand Watches, a responsive Next.js and React e-commerce experience with cinematic watch visuals, product browsing, authentication, cart and wishlist features, and a test-mode checkout flow. Let us open the deployed website and see how it works."
 
 ## Optional short outro
 

@@ -39,7 +39,7 @@ function DemoBankContent() {
       },
     };
     try {
-      const raw = window.sessionStorage.getItem("aurelion_checkout_customer");
+      const raw = window.sessionStorage.getItem("aura_checkout_customer");
       if (raw) customer = JSON.parse(raw);
     } catch {
       /* fall back to guest */

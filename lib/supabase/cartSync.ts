@@ -7,7 +7,7 @@ import { supabase, isSupabaseConfigured } from "./client";
 export async function loadCartForUser(userEmail: string): Promise<CartItem[]> {
   if (!userEmail) return [];
 
-  const localKey = `aurelion_user_cart_${userEmail.trim().toLowerCase()}`;
+  const localKey = `aura_user_cart_${userEmail.trim().toLowerCase()}`;
 
   if (isSupabaseConfigured && supabase) {
     try {
@@ -44,7 +44,7 @@ export async function loadCartForUser(userEmail: string): Promise<CartItem[]> {
 export async function saveCartForUser(userEmail: string, items: CartItem[]): Promise<void> {
   if (!userEmail) return;
 
-  const localKey = `aurelion_user_cart_${userEmail.trim().toLowerCase()}`;
+  const localKey = `aura_user_cart_${userEmail.trim().toLowerCase()}`;
 
   // Save to per-user local storage
   if (typeof window !== "undefined") {
