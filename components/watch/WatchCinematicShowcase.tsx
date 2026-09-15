@@ -54,18 +54,6 @@ export const WatchCinematicShowcase: React.FC = () => {
             </div>
           </div>
 
-          {/* Single floating gold video — large, properly displayed */}
-          <video
-            src="/assets/video/Watch_Gold-Video.mp4"
-            poster="/watch-frames/ezgif-frame-001.jpg"
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            className="absolute z-10 left-1/2 -translate-x-1/2 top-[6%] w-[46%] max-w-[420px] aspect-video object-contain rounded-xl shadow-[0_20px_50px_-12px_rgba(15,35,60,0.45)] border border-slate-200 bg-white"
-          />
-
           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#b9975b] to-transparent" />
         </div>
       </div>
