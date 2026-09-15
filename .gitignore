@@ -1,0 +1,109 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Build
+.next/
+dist/
+build/
+out/
+
+# Environment & Secrets (NEVER commit these)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.env*.local
+.env*.development
+.env*.production
+!.env.example
+
+# Secrets
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+server.log
+build.log
+build_output.log
+
+# Runtime data
+cache/
+.cache/
+*.pid
+*.seed
+*.pidlock
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary
+tmp/
+temp/
+*.tmp
+
+# Public assets (if generated)
+public/assets/generated/
+
+# Supabase database/config files at the repository root
+/supabase/
+
+# Vercel
+.vercel/
+
+# Netlify
+.netlify/
+
+# Temp / debug / one-off scratch files
+_*.*
+_*/
+*.txt
+!README.txt
+{const
+tsconfig.tsbuildinfo
+*.tsbuildinfo
+scripts/_*
+scripts/probe*.bat
+scripts/rmpage*.bat
+scripts/readcheckout.ps1
+scripts/build_bg.bat
+scripts/check_tsc.bat
+scripts/dump.cjs
+scripts/_imgdims.py
+move_budget.bat
+watches_Frames/
+YouTube_Video_Script.md
+_dev.log
+_dev2.log
+_dev3.log
+_live.log
+_build.log
+_build_now.log
+_run*.log
