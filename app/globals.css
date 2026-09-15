@@ -117,12 +117,21 @@
 }
 
 /* Smooth-scroll + 3D stage helpers */
-html.lenis, html.lenis body { height: auto; }
-.lenis.lenis-smooth { scroll-behavior: auto !important; }
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
 .stage-3d-glow {
   background:
-    radial-gradient(circle at 50% 38%, rgba(185,151,91,0.16), transparent 55%),
-    radial-gradient(circle at 50% 90%, rgba(14,58,93,0.12), transparent 60%);
+    radial-gradient(
+      circle at 50% 38%,
+      rgba(185, 151, 91, 0.16),
+      transparent 55%
+    ),
+    radial-gradient(circle at 50% 90%, rgba(14, 58, 93, 0.12), transparent 60%);
 }
 
 .watch-card:hover {
@@ -218,7 +227,8 @@ html.lenis, html.lenis body { height: auto; }
 }
 
 @keyframes butterflyDot {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 0.3;
     transform: translate(0, 0) scale(1);
   }
@@ -250,4 +260,30 @@ html.lenis, html.lenis body { height: auto; }
 
 .animate-slideRight {
   animation: slideRight 0.4s ease-out forwards;
+}
+
+@media (max-width: 640px) {
+  .watch-film-frame {
+    border-radius: 1rem;
+  }
+
+  .watch-flight-shadow {
+    bottom: -8px;
+    height: 24px;
+  }
+
+  .watch-film-image {
+    max-width: 92%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

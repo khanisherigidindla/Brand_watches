@@ -30,27 +30,44 @@ export const WatchCinematicShowcase: React.FC = () => {
     if (!r) return;
     const x = (e.clientX - r.left) / r.width - 0.5;
     const y = (e.clientY - r.top) / r.height - 0.5;
-    setTilt({ x: Math.max(-10, Math.min(10, x * 20)), y: Math.max(-10, Math.min(10, y * -16)) });
+    setTilt({
+      x: Math.max(-10, Math.min(10, x * 20)),
+      y: Math.max(-10, Math.min(10, y * -16)),
+    });
   };
 
   return (
-    <div ref={wrapRef} onPointerMove={onMove} className="relative w-full mx-auto">
+    <div
+      ref={wrapRef}
+      onPointerMove={onMove}
+      className="relative w-full mx-auto touch-pan-y"
+    >
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_42%,rgba(185,151,91,0.18),transparent_65%)]" />
       </div>
 
       <div className="watch-film-frame relative bg-white rounded-[2rem] border border-slate-200 shadow-[0_50px_110px_-30px_rgba(15,35,60,0.5)] overflow-hidden">
-        <div className="relative w-full bg-white" style={{ aspectRatio: "16 / 10" }}>
+        <div className="relative w-full bg-white aspect-[4/3] sm:aspect-[16/10]">
           <div className="watch-gold-sheen" />
           <div className="watch-flight-shadow" />
-          <div className="absolute inset-0 flex items-center justify-center" style={{ perspective: "2000px" }}>
+          <div
+            className="absolute inset-0 flex items-center justify-center"
+            style={{ perspective: "2000px" }}
+          >
             <div className="watch-film-float h-full flex items-center justify-center">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={WATCH_FRAME_FILES[frame - 1]} alt="Aurelion watch showcase"
+              <img
+                src={WATCH_FRAME_FILES[frame - 1]}
+                alt="Aurelion watch showcase"
                 className="watch-film-image h-full w-auto"
                 draggable={false}
-                onError={(e) => { e.currentTarget.style.display = "none"; }}
-                style={{ transform: `rotateX(${6 + tilt.y}deg) rotateY(${-6 + tilt.x}deg) scale(1.14)` }} />
+                onError={(e) => {
+                  e.currentTarget.style.display = "none";
+                }}
+                style={{
+                  transform: `rotateX(${6 + tilt.y}deg) rotateY(${-6 + tilt.x}deg) scale(1.14)`,
+                }}
+              />
             </div>
           </div>
 

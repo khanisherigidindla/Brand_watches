@@ -9,14 +9,18 @@ function DemoBankContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const amount = searchParams.get("amount") || "0";
-  const method = (searchParams.get("method") === "COD" ? "COD" : "UPI") as "UPI" | "COD";
+  const method = (searchParams.get("method") === "COD" ? "COD" : "UPI") as
+    | "UPI"
+    | "COD";
 
   const items = useCartStore((s) => s.items);
   const clearCart = useCartStore((s) => s.clearCart);
 
   const handleResult = (outcome: "success" | "failure") => {
     if (outcome === "failure") {
-      router.push(`/payment-failure?paymentMethod=${method}&amount=${amount}`);
+      router.push(
+        `/payment-processing?outcome=failure&paymentMethod=${method}&amount=${amount}`,
+      );
       return;
     }
 
@@ -43,7 +47,7 @@ function DemoBankContent() {
 
     const subtotal = items.reduce(
       (sum, item) => sum + item.product.priceINR * item.quantity,
-      0
+      0,
     );
     const tax = Math.round(subtotal * 0.18);
     const total = subtotal + tax;
@@ -80,7 +84,7 @@ function DemoBankContent() {
     clearCart();
 
     router.push(
-      `/payment-success?orderId=${orderId}&orderNumber=${orderNumber}&paymentMethod=${method}`
+      `/payment-processing?outcome=success&orderId=${orderId}&orderNumber=${orderNumber}&paymentMethod=${method}`,
     );
   };
 
@@ -113,16 +117,16 @@ function DemoBankContent() {
           Amount: ₹{Number(amount).toLocaleString("en-IN")} · Method: {method}
         </p>
 
-        <div className="mt-8 flex items-center justify-center gap-6">
+        <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-6">
           <button
             onClick={() => handleResult("success")}
-            className="min-w-[140px] px-8 py-3 bg-[#22a06b] hover:bg-[#1c8a5b] text-white text-sm font-semibold rounded-md transition-colors"
+            className="w-full sm:min-w-[140px] sm:w-auto px-8 py-3 bg-[#22a06b] hover:bg-[#1c8a5b] text-white text-sm font-semibold rounded-md transition-colors"
           >
             Success
           </button>
           <button
             onClick={() => handleResult("failure")}
-            className="min-w-[140px] px-8 py-3 bg-[#e5635a] hover:bg-[#d14e45] text-white text-sm font-semibold rounded-md transition-colors"
+            className="w-full sm:min-w-[140px] sm:w-auto px-8 py-3 bg-[#e5635a] hover:bg-[#d14e45] text-white text-sm font-semibold rounded-md transition-colors"
           >
             Failure
           </button>
